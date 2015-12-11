@@ -1,0 +1,17 @@
+@import "compass/reset";
+table {
+	margin: 40px auto;
+	border:4px double black;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+#life {
+	td {
+		width: 15px;
+		height: 15px;
+		border: 1px solid blue;
+	}
+	td.life {
+		background-color: green;
+	}
+}
+
