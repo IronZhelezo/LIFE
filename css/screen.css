@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 2, ../sass/screen.scss */
-table {
+table, form, button {
   margin: 40px auto;
   border: 4px double black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -79,4 +79,9 @@ table {
 /* line 13, ../sass/screen.scss */
 #life td.life {
   background-color: green;
+}
+
+/* line 17, ../sass/screen.scss */
+button {
+  display: block;
 }
