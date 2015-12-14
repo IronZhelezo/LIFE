@@ -68,20 +68,27 @@ table, form, button {
   margin: 40px auto;
   border: 4px double black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 #life td {
   width: 15px;
   height: 15px;
   border: 1px solid blue;
 }
-/* line 13, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 #life td.life {
   background-color: green;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 button {
-  display: block;
+  display: inline-block;
+  width: 100px;
+}
+
+/* line 22, ../sass/screen.scss */
+.stop {
+  display: none;
 }

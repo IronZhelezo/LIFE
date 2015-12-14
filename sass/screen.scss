@@ -3,6 +3,7 @@ table, form, button {
 	margin: 40px auto;
 	border:4px double black;
 	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	text-align: center;
 }
 #life {
 	td {
@@ -15,6 +16,9 @@ table, form, button {
 	}
 }
 button {
-	display: block;
+	display: inline-block;
+	width: 100px;
 }
-
+.stop {
+	display: none;
+}

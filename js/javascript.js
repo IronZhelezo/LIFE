@@ -3,6 +3,7 @@ $(document).ready(function () {
 	var m = 30;
 	var n = 50;
 	var life = 0;
+	var timer;
 	for (var i = 0; i < m; i++) {
 		 $("#life").append('<tr id="tr-'+ i + '">');
 		for (var j = 0; j < n; j++) {
@@ -12,7 +13,7 @@ $(document).ready(function () {
 	$("td").click(function () {
 		$(this).addClass("life");
 	})
-	$(".onestep").click(function(){
+	function runLife () {
 		for (var i = 0; i < $(".life").length; i++) {
 				var trNum = parseInt($(".life")[i].parentNode.id.substring(3));
 				var tdNum = (trNum<10) ? parseInt($(".life")[i].id.substring(7)):
@@ -33,7 +34,7 @@ $(document).ready(function () {
 								$(neighbor).addClass("born");
 							} else {
 							 $(neighbor).removeClass("born");
-							}
+							};
 						};
 					};
 				};
@@ -42,6 +43,22 @@ $(document).ready(function () {
 		$("td").removeClass("life");
 		$(".born").addClass("life");
 		$("td").removeClass("born");
-	})
+	};
+
+	$(".onestep").click(function(){
+		runLife ();
+	});
+	$(".start").click(function(){
+		timer = setInterval(function () {
+				runLife ();
+			}, 1000);
+		$(this).css('display','none');
+		$(".stop").css('display','inline-block');
+	});
+	$(".stop").click(function(){
+		clearInterval(timer);
+		$(this).css('display','none');
+		$(".start").css('display','inline-block');
+	});
 });
 
