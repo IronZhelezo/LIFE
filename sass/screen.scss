@@ -1,9 +1,12 @@
 @import "compass/reset";
 table, form, button {
-	margin: 40px auto;
+	margin: 10px auto;
 	border:4px double black;
 	box-shadow:0 0 10px rgba(0,0,0,0.5);
 	text-align: center;
+}
+table {
+	margin: 0 auto;
 }
 #life {
 	td {
@@ -21,4 +24,50 @@ button {
 }
 .stop {
 	display: none;
+}
+.navbar-nav {
+	margin: 0 auto;
+	text-align: center;
+	float: none;
+	max-width: 801px;
+}
+.dropdown-toggle {
+	background-color: green;
+	color: white;
+	text-align: center;
+	.forever {
+		background-color: #f4f5a5;
+		color: blue;
+	}
+	.periodic {
+		background-color: blue;
+		color: yellow;
+	}
+	.moving {
+		background-color: yellow;
+		color: red;
+	}
+	.guns {
+		background-color: black;
+		color: white;
+	}
+}
+.dropdown-menu {
+	p {
+		text-align: center;
+	}
+	div {
+		cursor: pointer;
+		img {
+			float: left;
+		}
+		div {
+			float: right;
+			text-align: right;
+			p {
+				text-align: right;
+			}
+		}
+	}
+	
 }
