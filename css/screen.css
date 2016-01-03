@@ -63,94 +63,238 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 2, ../sass/screen.scss */
-table, form, button {
-  margin: 10px auto;
-  border: 4px double black;
+/* line 3, ../sass/screen.scss */
+.navbar, .content {
+  opacity: 0;
+}
+
+/* line 6, ../sass/screen.scss */
+table, form, button, .panelLeft, .panelRight, #rel, .dropdown, input, .rules {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 4px double black;
+}
+
+/* line 10, ../sass/screen.scss */
+table, form, button, input, .rules {
+  margin: 10px auto;
   text-align: center;
 }
 
-/* line 8, ../sass/screen.scss */
-table {
-  margin: 0 auto;
+/* line 14, ../sass/screen.scss */
+body {
+  background: #FFDD73;
+  overflow-x: hidden;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
+table, form, .rules {
+  z-index: 100;
+  position: relative;
+}
+
+/* line 22, ../sass/screen.scss */
+.panelLeft, .panelRight {
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  background-image: url(../img/glider.gif);
+  background-size: 100%;
+  top: 0;
+  opacity: 0.4;
+  z-index: 1;
+  display: none;
+}
+
+/* line 33, ../sass/screen.scss */
+.panelLeft {
+  left: 0;
+}
+
+/* line 36, ../sass/screen.scss */
+.panelRight {
+  right: 0;
+}
+
+/* line 39, ../sass/screen.scss */
+#rel, #abs p {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+  background-color: #01939A;
+  color: #FF7673;
+  border: 4px solid #FFD173;
+}
+
+/* line 47, ../sass/screen.scss */
+#abs p {
+  background-color: #80EA69;
+  color: #FFAD73;
+  border: 4px solid #E266B7;
+  display: inline-block;
+}
+
+/* line 53, ../sass/screen.scss */
+#rel {
+  position: relative;
+  opacity: 0;
+  margin: 10px 0;
+  z-index: 10;
+}
+
+/* line 59, ../sass/screen.scss */
+#abs {
+  position: absolute;
+  top: 10px;
+  margin-top: 40%;
+  z-index: 100;
+  width: 100%;
+  font-size: 2em;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* line 69, ../sass/screen.scss */
+#strapper {
+  width: 200px;
+  height: 52px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuMCIgeDI9IjAuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMwMTkzOWEiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiM4MGVhNjkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(40%, rgba(1, 147, 154, 0)), color-stop(49%, #80ea69));
+  background: -moz-linear-gradient(top, rgba(1, 147, 154, 0) 40%, #80ea69 49%);
+  background: -webkit-linear-gradient(top, rgba(1, 147, 154, 0) 40%, #80ea69 49%);
+  background: linear-gradient(to bottom left, rgba(1, 147, 154, 0) 40%, #80ea69 49%);
+  position: absolute;
+  margin-left: 100%;
+  top: 14px;
+  border-bottom: 4px solid #E266B7;
+  z-index: 101;
+}
+
+/* line 79, ../sass/screen.scss */
+table {
+  margin: 0 auto;
+  background-color: white;
+  z-index: 100;
+}
+
+/* line 85, ../sass/screen.scss */
 #life td {
   width: 15px;
   height: 15px;
-  border: 1px solid blue;
+  border: 1px solid #7dc8f7;
 }
-/* line 17, ../sass/screen.scss */
-#life td.life {
+/* line 90, ../sass/screen.scss */
+#life .life, #life .born {
   background-color: green;
 }
-
-/* line 21, ../sass/screen.scss */
-button {
-  display: inline-block;
-  width: 100px;
+/* line 93, ../sass/screen.scss */
+#life .born {
+  opacity: 0;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
+button, input {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/* line 103, ../sass/screen.scss */
 .stop {
   display: none;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .navbar-nav {
   margin: 0 auto;
   text-align: center;
   float: none;
-  max-width: 801px;
+  max-width: 72%;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .dropdown-toggle {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.8);
   color: white;
   text-align: center;
 }
-/* line 38, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .dropdown-toggle .forever {
   background-color: #f4f5a5;
   color: blue;
 }
-/* line 42, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .dropdown-toggle .periodic {
   background-color: blue;
   color: yellow;
 }
-/* line 46, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .dropdown-toggle .moving {
   background-color: yellow;
   color: red;
 }
-/* line 50, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .dropdown-toggle .guns {
   background-color: black;
   color: white;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .dropdown-menu p {
   text-align: center;
 }
-/* line 59, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .dropdown-menu div {
   cursor: pointer;
 }
-/* line 61, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .dropdown-menu div img {
   float: left;
 }
-/* line 64, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .dropdown-menu div div {
   float: right;
   text-align: right;
 }
-/* line 67, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .dropdown-menu div div p {
   text-align: right;
+}
+
+/* line 151, ../sass/screen.scss */
+form, .rules {
+  background: #679FD2;
+}
+
+/* line 154, ../sass/screen.scss */
+.rules {
+  color: #360570;
+  font-weight: bold;
+}
+/* line 157, ../sass/screen.scss */
+.rules h1 {
+  font-size: 20px;
+  padding: 15px;
+}
+/* line 161, ../sass/screen.scss */
+.rules p {
+  font-size: 15px;
+  padding: 10px;
+}
+/* line 165, ../sass/screen.scss */
+.rules ul {
+  text-align: left;
+  margin: 10px 20px;
+}
+/* line 168, ../sass/screen.scss */
+.rules ul li {
+  list-style-type: disc;
+  margin: 5px 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 175, ../sass/screen.scss */
+  .navbar-nav > li {
+    float: none;
+  }
 }

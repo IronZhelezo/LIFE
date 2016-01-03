@@ -1,19 +1,80 @@
 $(document).ready(function () {
 	'use strict'
+	var width = $("body").width();
+	var widthRel = $("#rel").width();
+	var heightRel = $("#rel").height();
+	$("#strapper").css('minHeight', heightRel + 4);
+	$("#abs p").css('minWidth', widthRel);
+	
+
+	$("#abs").animate({
+		marginTop: "0",
+		fontSize: "1em"
+		},{duration:2500,
+		complete: function(){
+			$("#rel").css('opacity',1);
+			$("#strapper").animate({
+				marginLeft: "-204px"
+			}, 3500);
+			$(".content").animate({
+				"opacity": 1
+			},{duration:5000,
+			complete: function(){
+				$(".navbar").css('opacity',1);
+				$(".panelLeft").css('display','block');
+				$(".panelRight").css('display','block');
+				$(".content").stop();
+				}
+			});
+		}
+	}).animate({
+		width: "0",
+		marginLeft: "-204px"
+	},{duration:3500,
+	complete: function(){
+		$("#abs").stop();
+		$("#strapper").stop();
+	}
+});
 	var m = 30;
-	var n = 50;
+	var n = Math.floor(width/16);
 	var life = 0;
 	var timer;
 	var z = 1;
 	var x = 1;
 	var sec = 1000;
-	for (var i = 0; i < m; i++) {
-		 $("#life").append('<tr id="tr-'+ i + '">');
-		for (var j = 0; j < n; j++) {
-			$("#life tr#tr-" + i).append('<td id="tr-' + i + 'td-'+ j + '">');
-		};
-	}
-	$("td").click(function () {
+	function table () {
+		for (var i = 0; i < m; i++) {
+			 $("#life").append('<tr id="tr-'+ i + '">');
+			for (var j = 0; j < n; j++) {
+				$("#life tr#tr-" + i).append('<td id="tr-' + i + 'td-'+ j + '">');
+			};
+		}
+	};
+	$(".widthTable").change(function () {
+		var val = parseInt(this.value);
+		if ((Math.floor((width-7)/16)) < val) {
+			alert("не достаточное разрешение экрана для отображения такого поля");
+		} else if (isNaN(val)) {
+			n = n;
+		} else {
+			n = val;
+			$("#life").empty();
+			table ();
+		}
+	});
+	$(".heightTable").change(function () {
+		var val = parseInt(this.value);
+		if (isNaN(val)) {
+			m = m;
+		} else {
+			m = val;
+			$("#life").empty();
+			table ();
+		}
+	});
+	table ();
+	$('body').on('click', 'td', function(){
 		if ($(this).hasClass("life")) {
 			$(this).removeClass("life");
 		} else{
@@ -22,10 +83,11 @@ $(document).ready(function () {
 	})
 	function stoped () {
 		clearInterval(timer);
+		$(".born").removeClass("born");
+		// $("td").css('opacity',1);
 		$(".stop").css('display','none');
 		$(".start").css('display','inline-block');
-		$(".navbar").css('display','block');
-		$(".born").removeClass("born");
+		$(".navbar").css("pointer-events","auto").css("cursor","pointer").css("opacity","1");
 	}
 	function runLife () {
 		for (var i = 0; i < $(".life").length; i++) {
@@ -47,15 +109,24 @@ $(document).ready(function () {
 							if (($(neighbor).hasClass("life")&&life == 4)||(life == 3)){
 								$(neighbor).addClass("born");
 							} else {
-							 $(neighbor).removeClass("born");
+								$(neighbor).removeClass("born");
 							};
 						};
 					};
+					// if (($(neighbor).hasClass("life"))&&($(neighbor).hasClass("born"))) {
+					// 	$(neighbor).css('opacity','1');
+					// } else if ($(neighbor).hasClass("life")) {
+					// 	$(neighbor).animate({
+					// 		"opacity" : 0}, 500);
+					// } else if ($(neighbor).hasClass("born")) {
+					// 	$(neighbor).animate({
+					// 		"opacity" : 1}, 500);
+					// };
 				};
 			};
 		};
 		$(".life").removeClass("life");
-		$(".born").addClass("life");
+		$(".born").addClass("life").css('opacity','1');
 		$(".born").removeClass("born");
 		if (neighbor == undefined) stoped ();
 	};
@@ -66,7 +137,7 @@ $(document).ready(function () {
 				runLife ();
 			}, sec);
 		$(".start").css('display','none');
-		$(".navbar").css('display','none');
+		$(".navbar").css("pointer-events","none").css("cursor","default").css("opacity","0.2");
 		$(".stop").css('display','inline-block');
 	}
 	$(".onestep").click(function(){
