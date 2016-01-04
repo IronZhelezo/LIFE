@@ -22,3 +22,6 @@ exclude_paths:
 - css/bootstrap.css.map
 - css/bootstrap.min.css
 - css/normalize.css
+- config.rb
+- css/bootstrap-theme.css
+- css/bootstrap-theme.min.css
