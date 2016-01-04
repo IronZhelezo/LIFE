@@ -1,14 +1,26 @@
+engines:
+rubocop:
+enabled: true
+golint:
+enabled: true
+gofmt:
+enabled: true
+eslint:
+enabled: true
+csslint:
+enabled: true
+ratings:
+paths:
+- app/**
+- lib/**
+- "**.rb"
+- "**.go"
 exclude_paths:
 - js/bootstrap.js
 - js/bootstrap.min.js
-- js/jquery.js
-- js/npm.js
-- css/bootstrap-theme.css
-- css/bootstrap-theme.css.map
-- css/bootstrap-theme.min.css
 - css/bootstrap.css
 - css/bootstrap.css.map
 - css/bootstrap.min.css
 - css/normalize.css
 - spec/**/*
-- vendor/**/*
+- vendor/**/* 
