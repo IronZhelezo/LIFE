@@ -5,8 +5,6 @@ $(document).ready(function () {
 	var heightRel = $("#rel").height();
 	$("#strapper").css('minHeight', heightRel + 4);
 	$("#abs p").css('minWidth', widthRel);
-	
-
 	$("#abs").animate({
 		marginTop: "0",
 		fontSize: "1em"
@@ -50,27 +48,25 @@ $(document).ready(function () {
 				$("#life tr#tr-" + i).append('<td id="tr-' + i + 'td-'+ j + '">');
 			};
 		}
-	};
+	}
+	function updateTable (n1,m1) {
+		n = n1;
+		m = m1;
+		$("#life").empty();
+		table ();
+	}
 	$(".widthTable").change(function () {
 		var val = parseInt(this.value);
 		if ((Math.floor((width-7)/16)) < val) {
 			alert("не достаточное разрешение экрана для отображения такого поля");
-		} else if (isNaN(val)) {
-			n = n;
-		} else {
-			n = val;
-			$("#life").empty();
-			table ();
+		} else if (!isNaN(val)) {
+			updateTable (val,m);
 		}
 	});
 	$(".heightTable").change(function () {
 		var val = parseInt(this.value);
-		if (isNaN(val)) {
-			m = m;
-		} else {
-			m = val;
-			$("#life").empty();
-			table ();
+		if (!isNaN(val)) {
+			updateTable (n,val);
 		}
 	});
 	table ();
@@ -79,7 +75,7 @@ $(document).ready(function () {
 			$(this).removeClass("life");
 		} else{
 			$(this).addClass("life");
-		};
+		}
 	})
 	function stoped () {
 		clearInterval(timer);
@@ -96,17 +92,17 @@ $(document).ready(function () {
 				parseInt($(".life")[i].id.substring(8));
 			for (var j = trNum-1; j <= trNum+1; j++) {
 				for (var k = tdNum - 1; k <= tdNum + 1; k++) {
-					var l = (j == m) ? 0 : (j == -1) ? m - 1 : j;
-					var h = (k == n) ? 0 : (k == -1) ? n - 1 : k;
+					var l = (j === m) ? 0 : (j === -1) ? m - 1 : j;
+					var h = (k === n) ? 0 : (k === -1) ? n - 1 : k;
 					var neighbor = $("#tr-"+l+"td-"+h)[0];
 					life = 0;
 					for (var a = l-1; a <= l+1; a++) {
 						for (var b = h - 1; b <= h + 1; b++) {
-							var c = (a == m) ? 0 : (a == -1) ? m - 1 : a;
-							var d = (b == n) ? 0 : (b == -1) ? n - 1 : b;
+							var c = (a === m) ? 0 : (a === -1) ? m - 1 : a;
+							var d = (b === n) ? 0 : (b === -1) ? n - 1 : b;
 							var neighborNext = $("#tr-"+c+"td-"+d)[0];
 							if ( $(neighborNext).hasClass("life"))life++;
-							if (($(neighbor).hasClass("life")&&life == 4)||(life == 3)){
+							if (($(neighbor).hasClass("life")&&life === 4)||(life === 3)){
 								$(neighbor).addClass("born");
 							} else {
 								$(neighbor).removeClass("born");
@@ -129,7 +125,7 @@ $(document).ready(function () {
 		$(".born").addClass("life").css('opacity','1');
 		$(".born").removeClass("born");
 		if (neighbor == undefined) stoped ();
-	};
+	}
 
 
 	function start () {
