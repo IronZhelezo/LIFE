@@ -1,15 +1,15 @@
 engines:
-rubocop:
-enabled: true
-golint:
-enabled: true
-gofmt:
-enabled: true
-eslint:
-enabled: true
-csslint:
-enabled: true
-ratings:
+    rubocop:
+        enabled: true
+    golint:
+        enabled: true
+    gofmt:
+        enabled: true
+    eslint:
+        enabled: true
+    csslint:
+        enabled: true
+    ratings:
 paths:
 - app/**
 - lib/**
