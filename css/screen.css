@@ -271,24 +271,25 @@ form, .rules {
   font-weight: bold;
 }
 /* line 156, ../sass/screen.scss */
-.rules h1 {
-  font-size: 20px;
-  padding: 15px;
-}
-/* line 160, ../sass/screen.scss */
 .rules p {
   font-size: 15px;
   padding: 10px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .rules ul {
   margin: 10px 20px;
   text-align: left;
 }
-/* line 167, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .rules ul li {
   list-style-type: disc;
   margin: 5px 15px;
+}
+
+/* line 169, ../sass/screen.scss */
+h1 {
+  font-size: 20px;
+  padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {

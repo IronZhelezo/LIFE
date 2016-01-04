@@ -153,10 +153,6 @@ form, .rules {
 .rules {
 	color: #360570;
 	font-weight: bold;
-	h1 {
-		font-size: 20px;
-		padding: 15px;
-	}
 	p {
 		font-size: 15px;
 		padding: 10px;
@@ -169,6 +165,10 @@ form, .rules {
 			margin: 5px 15px;
 		}
 	}
+}
+h1 {
+	font-size: 20px;
+	padding: 15px;
 }
 @media screen and (max-width:1200px) {
 	.navbar-nav > li {

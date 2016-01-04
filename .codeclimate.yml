@@ -5,7 +5,7 @@ engines:
     enabled: true
   eslint:
     enabled: true
-  csslint:
+  scss-lint:
     enabled: true
 ratings:
   paths:
