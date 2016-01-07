@@ -1,177 +1,192 @@
 @import "compass/reset";
 @import "compass/css3";
 .navbar, .content {
-	opacity: 0;
+    opacity: 0;
 }
-table, form, button, .panelLeft, .panelRight, .rel, .dropdown, input, .rules{
-	border:4px double black;
-	box-shadow:0 0 10px rgba(0,0,0,0.5);
+table,
+form,
+button,
+.panel_left,
+.panel_right,
+.rel,
+.dropdown,
+input,
+.rules{
+    border:4px double black;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
-table, form, button, input, .rules {
-	margin: 10px auto;
-	text-align: center;
+table,
+form,
+button,
+input,
+.rules {
+    margin: 10px auto;
+    text-align: center;
 }
 body {
-	background: #FFDD73;
-	overflow-x: hidden;
+    background: #ffdd73;
+    overflow-x: hidden;
 }
-table, form, .rules {
-	position: relative;
-	z-index:100;
+table,
+form,
+.rules {
+    position: relative;
+    z-index:100;
 }
-.panelLeft, .panelRight {
-	background-image: url(../img/glider.gif);
-	background-size: 100%;
-	display: none;
-	height: 100%;
-	opacity: 0.4;
-	position:fixed;
-	top: 0;
-	width: 50px;
-	z-index:1;
+.panel_left,
+.panel_right {
+    background-image: url(../img/glider.gif);
+    background-size: 100%;
+    display: none;
+    height: 100%;
+    opacity: 0.4;
+    position:fixed;
+    top: 0;
+    width: 50px;
+    z-index:1;
 }
-.panelLeft {
-	left: 0;
+.panel_left {
+    left: 0;
 }
-.panelRight {
-	right: 0;
+.panel_right {
+    right: 0;
 }
-.rel, .abs p {
-	background-color: #01939A;
-	border:4px solid #FFD173;
-	color: #FF7673;
-	font-size: 3em;
-	text-align:center;
-	width: 100%;
+.rel,
+.abs p {
+    background-color: #01939a;
+    border:4px solid #ffd173;
+    color: #ff7673;
+    font-size: 3em;
+    text-align:center;
+    width: 100%;
 }
 .abs p {
-	background-color: #80EA69;
-	border:4px solid #E266B7;
-	color: #FFAD73;
-	display: inline-block;
+    background-color: #80ea69;
+    border:4px solid #e266b7;
+    color: #ffad73;
+    display: inline-block;
 }
 .rel {
-	margin: 10px 0;
-	opacity: 0;
-	position: relative;
-	z-index:10;
+    margin: 10px 0;
+    opacity: 0;
+    position: relative;
+    z-index:10;
 }
 .abs {
-	font-size: 2em;
-	margin-top: 40%;
-	overflow: hidden;
-	position: absolute;
-	top: 10px;
-	width: 100%;
-	z-index:10;
+    font-size: 2em;
+    margin-top: 40%;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    z-index:10;
 }
 .strapper {
-	@include background (linear-gradient(to bottom left, rgba(1,147,154,0) 40%, rgba(128,234,105,1) 49%));
-	border-bottom: 4px solid #E266B7;
-	height: 52px;
-	margin-left: 100%;
-	position: absolute;
-	top: 14px;
-	width: 200px;
-	z-index: 101;
+    @include background (linear-gradient(to bottom left, rgba(1,147,154,0) 40%, rgba(128,234,105,1) 49%));
+    border-bottom: 4px solid #e266b7;
+    height: 52px;
+    margin-left: 100%;
+    position: absolute;
+    top: 14px;
+    width: 200px;
+    z-index: 101;
 }
 table {
-	background-color: white;
-	margin: 0 auto;
-	z-index:100;
+    background-color: white;
+    margin: 0 auto;
+    z-index:100;
 }
 tbody {
-	td {
-		border: 1px solid #7dc8f7;
-		height: 15px;
-		width: 15px;
-	}
-	.life , .born {
-		background-color: green;
-	}
-	.born {
-		opacity: 0;
-	}
+    td {
+        border: 1px solid #7dc8f7;
+        height: 15px;
+        width: 15px;
+    }
+    .life {
+        background-color: green;
+    }
 }
-button, input {
-	display: inline-block;
-	height: 50px;
-	vertical-align: middle;
-	width: 100px;
+button,
+input {
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    width: 100px;
 }
 .stop {
-	display: none;
+    display: none;
 }
 .navbar-nav {
-	float: none;
-	margin: 0 auto;
-	max-width: 72%;
-	text-align: center;
+    float: none;
+    margin: 0 auto;
+    max-width: 72%;
+    text-align: center;
 }
 .dropdown-toggle {
-	background-color: rgba(0,128,0,0.8);
-	color: white;
-	text-align: center;
-	.forever {
-		background-color: #f4f5a5;
-		color: blue;
-	}
-	.periodic {
-		background-color: blue;
-		color: yellow;
-	}
-	.moving {
-		background-color: yellow;
-		color: red;
-	}
-	.guns {
-		background-color: black;
-		color: white;
-	}
+    background-color: rgba(0,128,0,0.8);
+    color: white;
+    text-align: center;
+    .forever {
+        background-color: #f4f5a5;
+        color: blue;
+    }
+    .periodic {
+        background-color: blue;
+        color: yellow;
+    }
+    .moving {
+        background-color: yellow;
+        color: red;
+    }
+    .guns {
+        background-color: black;
+        color: white;
+    }
 }
 .dropdown-menu {
-	p {
-		text-align: center;
-	}
-	div {
-		cursor: pointer;
-		img {
-			float: left;
-		}
-		div {
-			float: right;
-			text-align: right;
-			p {
-				text-align: right;
-			}
-		}
-	}
+    p {
+        text-align: center;
+    }
+    div {
+        cursor: pointer;
+        img {
+            float: left;
+        }
+        div {
+            float: right;
+            text-align: right;
+            p {
+                text-align: right;
+            }
+        }
+    }
 }
-form, .rules {
-	background: #679FD2;
+form,
+.rules {
+    background: #679fd2;
 }
 .rules {
-	color: #360570;
-	font-weight: bold;
-	p {
-		font-size: 15px;
-		padding: 10px;
-	}
-	ul {
-		margin:10px 20px;
-		text-align: left;
-		li {
-			list-style-type: disc;
-			margin: 5px 15px;
-		}
-	}
+    color: #360570;
+    font-weight: bold;
+    p {
+        font-size: 15px;
+        padding: 10px;
+    }
+    ul {
+        margin:10px 20px;
+        text-align: left;
+        li {
+            list-style-type: disc;
+            margin: 5px 15px;
+        }
+    }
 }
 h1 {
-	font-size: 20px;
-	padding: 15px;
+    font-size: 20px;
+    padding: 15px;
 }
 @media screen and (max-width:1200px) {
-	.navbar-nav > li {
-		float: none;
-	}
+    .navbar-nav > li {
+        float: none;
+    }
 }

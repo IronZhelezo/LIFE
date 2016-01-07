@@ -3,6 +3,8 @@ engines:
     enabled: true
   golint:
     enabled: true
+  jslint:
+    enabled: true
   eslint:
     enabled: true
   scss-lint:

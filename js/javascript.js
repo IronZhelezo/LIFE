@@ -19,8 +19,8 @@ $(document).ready(function () {
 			},{duration:5000,
 			complete: function(){
 				$(".navbar").css('opacity',1);
-				$(".panelLeft").css('display','block');
-				$(".panelRight").css('display','block');
+				$("#panelLeft").css('display','block');
+				$("#panelRight").css('display','block');
 				$(".content").stop();
 				}
 			});
