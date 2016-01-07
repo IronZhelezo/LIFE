@@ -14,6 +14,8 @@ engines:
     checks:
       SelectorDepth:
         enabled: false
+      NestingDepth:
+        enabled: false
 # ... CONFIG CONTENT ...
 ratings:
   paths:

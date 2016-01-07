@@ -18,7 +18,7 @@ button,
 input,
 .rules {
   border: 4px double #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 10px rgba(#000, .5);
 }
 
 table,
@@ -164,7 +164,7 @@ input {
 
   .moving {
     background-color: #ff0;
-    color:  #f00;
+    color: #f00;
   }
 
   .guns {
