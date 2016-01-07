@@ -79,7 +79,7 @@ button,
 .dropdown,
 input,
 .rules {
-  border: 4px double black;
+  border: 4px double #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -110,7 +110,7 @@ form,
 /* line 45, ../sass/screen.scss */
 .panel-left,
 .panel-right {
-  background-image: url(../img/glider.gif);
+  background-image: url("../img/glider.gif");
   background-size: 100%;
   display: none;
   height: 100%;
@@ -160,7 +160,7 @@ form,
   width: 100%;
   z-index: 10;
 }
-/* line 84, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .abs p {
   background-color: #80ea69;
   border: 4px solid #e266b7;
@@ -186,7 +186,7 @@ form,
 
 /* line 111, ../sass/screen.scss */
 table {
-  background-color: white;
+  background-color: #fff;
   margin: 0 auto;
   z-index: 100;
 }
@@ -199,7 +199,7 @@ tbody td {
 }
 /* line 124, ../sass/screen.scss */
 tbody .life {
-  background-color: green;
+  background-color: #008000;
 }
 
 /* line 130, ../sass/screen.scss */
@@ -227,87 +227,87 @@ input {
 /* line 149, ../sass/screen.scss */
 .dropdown-toggle {
   background-color: rgba(0, 128, 0, 0.8);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
-/* line 153, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .dropdown-toggle .forever {
   background-color: #f4f5a5;
-  color: #0000ff;
+  color: #00f;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .dropdown-toggle .periodic {
-  background-color: #0000ff;
-  color: #ffff00;
+  background-color: #00f;
+  color: #ff0;
 }
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .dropdown-toggle .moving {
-  background-color: #ffff00;
-  color: red;
+  background-color: #ff0;
+  color: #ff0000;
 }
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .dropdown-toggle .guns {
-  background-color: #000000;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .dropdown-menu p {
   text-align: center;
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .dropdown-menu div {
   cursor: pointer;
 }
-/* line 182, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .dropdown-menu div img {
   float: left;
 }
-/* line 186, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .dropdown-menu div div {
   float: right;
   text-align: right;
 }
-/* line 189, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .dropdown-menu div div p {
   text-align: right;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 form,
 .rules {
   background: #679fd2;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .rules {
   color: #360570;
   font-weight: bold;
 }
-/* line 207, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .rules p {
   font-size: 15px;
   padding: 10px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .rules ul {
   margin: 10px 20px;
   text-align: left;
 }
-/* line 214, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .rules ul li {
   list-style-type: disc;
   margin: 5px 15px;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 h1 {
   font-size: 20px;
   padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 229, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .navbar-nav > li {
     float: none;
   }

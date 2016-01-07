@@ -7,8 +7,14 @@ engines:
     enabled: true
   eslint:
     enabled: true
+  # ... CONFIG CONTENT ...
   scss-lint:
     enabled: true
+    # ... CONFIG CONTENT ...
+    checks:
+      SelectorDepth:
+        enabled: false
+# ... CONFIG CONTENT ...
 ratings:
   paths:
   - app/**
