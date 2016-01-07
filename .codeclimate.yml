@@ -16,6 +16,8 @@ engines:
         enabled: false
       NestingDepth:
         enabled: false
+      ColorVariable:
+        enabled: false
 # ... CONFIG CONTENT ...
 ratings:
   paths:
