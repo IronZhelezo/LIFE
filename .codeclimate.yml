@@ -5,6 +5,8 @@ engines:
     enabled: true
   jslint:
     enabled: true
+  fixme:
+    enabled: true
   eslint:
     enabled: true
   # ... CONFIG CONTENT ...
