@@ -160,7 +160,7 @@ form,
   width: 100%;
   z-index: 10;
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .abs p {
   background-color: #80ea69;
   border: 4px solid #e266b7;
@@ -168,7 +168,7 @@ form,
   display: inline-block;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .strapper {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjAuMCIgeDI9IjAuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiMwMTkzOWEiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI0OSUiIHN0b3AtY29sb3I9IiM4MGVhNjkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
   background: -webkit-gradient(linear, 100% 0%, 0% 100%, color-stop(40%, rgba(1, 147, 154, 0)), color-stop(49%, #80ea69));
@@ -184,25 +184,25 @@ form,
   z-index: 101;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 table {
   background-color: #fff;
   margin: 0 auto;
   z-index: 100;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 tbody td {
   border: 1px solid #7dc8f7;
   height: 15px;
   width: 15px;
 }
-/* line 124, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 tbody .life {
   background-color: #008000;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 button,
 input {
   display: inline-block;
@@ -211,12 +211,12 @@ input {
   width: 100px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .stop {
   display: none;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .navbar-nav {
   float: none;
   margin: 0 auto;
@@ -224,90 +224,90 @@ input {
   text-align: center;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .dropdown-toggle {
   background-color: rgba(0, 128, 0, 0.8);
   color: #fff;
   text-align: center;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .dropdown-toggle .forever {
   background-color: #f4f5a5;
   color: #00f;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .dropdown-toggle .periodic {
   background-color: #00f;
   color: #ff0;
 }
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .dropdown-toggle .moving {
   background-color: #ff0;
-  color: #ff0000;
+  color: #f00;
 }
-/* line 169, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .dropdown-toggle .guns {
   background-color: #000;
   color: #fff;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .dropdown-menu p {
   text-align: center;
 }
-/* line 181, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .dropdown-menu div {
   cursor: pointer;
 }
-/* line 184, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .dropdown-menu div img {
   float: left;
 }
-/* line 188, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .dropdown-menu div div {
   float: right;
   text-align: right;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .dropdown-menu div div p {
   text-align: right;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 form,
 .rules {
   background: #679fd2;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .rules {
   color: #360570;
   font-weight: bold;
 }
-/* line 211, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .rules p {
   font-size: 15px;
   padding: 10px;
 }
-/* line 216, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .rules ul {
   margin: 10px 20px;
   text-align: left;
 }
-/* line 220, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .rules ul li {
   list-style-type: disc;
   margin: 5px 15px;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 h1 {
   font-size: 20px;
   padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {
-  /* line 235, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   .navbar-nav > li {
     float: none;
   }
